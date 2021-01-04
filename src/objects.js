@@ -10,7 +10,7 @@ const getName = object => {
 };
 
 const getProperty = (property, object) => {
-return property.age;
+return object.age;
 };
 
 const hasProperty = (property, object) => {
@@ -18,19 +18,19 @@ const hasProperty = (property, object) => {
 };
 
 const isOver65 = person => {
-  // your code here
+  return person.age > 65
 };
 
 const getAges = people => {
-  // your code here
+  return people.map(person => person.age);
 };
 
 const findByName = (name, people) => {
-  // your code here
+  return people.find(obj => obj.name === name);
 };
 
 const findHondas = cars => {
-  // your code here
+  return cars.filter(obj => obj.manufacturer === "Honda");
 };
 
 const averageAge = people => {
